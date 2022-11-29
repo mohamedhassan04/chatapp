@@ -3,6 +3,7 @@ import "./Chat.css";
 import { user } from "../Join/Join";
 import socketIO from "socket.io-client";
 import Message from "../Message/Message";
+import profile from "../../images/profile.png";
 import ReactScrollToBottom from "react-scroll-to-bottom";
 import { Link } from "react-router-dom";
 
@@ -58,6 +59,9 @@ const Chat = () => {
       <div className="chat-container">
         <div className="chat-header">
           <h2>To Talk</h2>
+          <h3>
+            <img src={profile} /> {user}
+          </h3>
           <Link to="/">
             <h6>Close</h6>
           </Link>

@@ -26,6 +26,18 @@
   margin: 2.5vmax;
 }
 
+.chat-header > h3 {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 2.5vmax;
+  text-transform: capitalize;
+}
+
+.chat-header > h3 > img {
+  width: 3vmax;
+}
+
 .chat-header h6 {
   color: white;
   margin: 2.5vmax;
