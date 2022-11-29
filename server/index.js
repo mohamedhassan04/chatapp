@@ -46,5 +46,5 @@ io.on("connection", (socket) => {
 
 /**@desc configuration server */
 server.listen(port, () => {
-  console.log(`server is running on ${port}`);
+  console.log(` hello server is running on ${port}`);
 });
