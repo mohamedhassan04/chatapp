@@ -5,6 +5,7 @@ import socketIO from "socket.io-client";
 import Message from "../Message/Message";
 import profile from "../../images/profile.png";
 import ReactScrollToBottom from "react-scroll-to-bottom";
+import EmojiPicker from "emoji-picker-react";
 import { Link } from "react-router-dom";
 
 const ENDPOINT = "http://localhost:8080/";
@@ -81,6 +82,7 @@ const Chat = () => {
             type="text"
             id="chat-input"
           />
+          {/* <EmojiPicker searchDisabled={true} skinTonesDisabled={true} /> */}
           <button onClick={send} className="send-btn">
             Send
           </button>
